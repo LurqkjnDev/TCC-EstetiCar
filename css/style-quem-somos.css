@@ -1,0 +1,90 @@
+/* MODO GLOBAL - MOBILE */
+:root {
+    --primary-color: #F3F3F3;
+    --text-Tittle-color: #424242;
+    --text-sub-color: #fff;
+    --text-alt-color: #4a4a4a;
+    --terciary-color: #2EBDFF;
+    --trasparencia-color: #76cdf58b;
+    --secondary-color: #171515;
+    --t1-font-family: "Bebas Neue", sans-serif;
+    --s1-font-family: "Sora", sans-serif;
+    --s2-font-family:"Poppins", sans-serif;
+    
+}
+
+/* botão */
+
+
+
+div[class*=container] {
+    text-align: center;
+    width: 100%;
+    height: 33%;
+    margin-top: 24px;
+    margin-left: 24px;
+    font-family: var(--s1-font-family);
+    cursor: pointer;
+}
+
+
+
+.btn {
+    position: relative;
+    color: white;
+    width: 256px;
+    height: 64px;
+    line-height: 64px;
+    transition: all 0.3s;
+
+    .btn {
+        transition: all 0.3s;
+        transform: scale(1, 1);
+    }
+}
+
+.btn::before,
+.btn::after {
+    content: '';
+    position: absolute;
+    transition: all 0.3s;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.btn-one::before {
+    left: 4px;
+    z-index: 1;
+
+    opacity: 0;
+    background: rgba(255, 255, 255, 0.1);
+    transform: scale(0.1, 1);
+}
+
+.btn-one:hover::before {
+    opacity: 1;
+    transform: scale(1, 1);
+}
+
+.btn-one::after {
+    transition: all 0.3s;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.btn-one:hover::after {
+    transform: scale(1, .1);
+    opacity: 0;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+

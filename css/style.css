@@ -1,1 +1,530 @@
+/* MODO GLOBAL - MOBILE */
+:root {
+    --primary-color: #F3F3F3;
+    --text-Tittle-color: #424242;
+    --text-sub-color: #fff;
+    --text-alt-color: #4a4a4a;
+    --terciary-color: #2EBDFF;
+    --trasparencia-color: #76cdf58b;
+    --secondary-color: #171515;
+    --t1-font-family: "Bebas Neue", sans-serif;
+    --s1-font-family: "Sora", sans-serif;
+    --s2-font-family:"Poppins", sans-serif;
+    
+}
 
+/* botão */
+
+
+
+div[class*=container] {
+    text-align: center;
+    width: 100%;
+    height: 33%;
+    margin-top: 24px;
+    margin-left: 24px;
+    font-family: var(--s1-font-family);
+    cursor: pointer;
+}
+
+
+
+.btn {
+    position: relative;
+    color: white;
+    width: 256px;
+    height: 64px;
+    line-height: 64px;
+    transition: all 0.3s;
+
+    .btn {
+        transition: all 0.3s;
+        transform: scale(1, 1);
+    }
+}
+
+.btn::before,
+.btn::after {
+    content: '';
+    position: absolute;
+    transition: all 0.3s;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.btn-one::before {
+    left: 4px;
+    z-index: 1;
+
+    opacity: 0;
+    background: rgba(255, 255, 255, 0.1);
+    transform: scale(0.1, 1);
+}
+
+.btn-one:hover::before {
+    opacity: 1;
+    transform: scale(1, 1);
+}
+
+.btn-one::after {
+    transition: all 0.3s;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.btn-one:hover::after {
+    transform: scale(1, .1);
+    opacity: 0;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+
+header {
+    background-color: var(--secondary-color);
+    text-align: center;
+    position: sticky;
+    top: 0;
+
+}
+
+header img {
+    width: 68%;
+    cursor: pointer;
+
+}
+
+body{
+    background-color: var(--primary-color);
+    overflow-x: hidden;
+}
+
+#menu a {
+    display: block;
+    background-color: var(--terciary-color);
+    padding: 12px 0px;
+    font-family: var(--s1-font-family);
+    color: #ffffff;
+    font-size: 1.4rem;
+    font-weight: 100;
+}
+
+#menu li {
+    margin-bottom: 1px;
+}
+
+#menu {
+    display: none;
+}
+
+#iconHam {
+    position: fixed;
+    right: 0;
+    cursor: pointer;
+    margin-top: 25px;
+
+}
+
+#iconClose {
+    position: fixed;
+    right: 0;
+    cursor: pointer;
+    margin-top: 25px;
+
+}
+
+#iconClose {
+    display: none;
+}
+
+.bgImg {
+    width: 100vw;
+    height: 500px;
+    background-image: url('/Imagens/talvezHome.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.tituloPrincipal {
+    font-family: var(--t1-font-family);
+    color: var(--primary-color);
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 8px;
+}
+
+.subHome {
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 100;
+    line-height: normal;
+    font-family: var(--s1-font-family);
+    color: var(--primary-color);
+}
+
+.boxDiv {
+    width: 380px;
+}
+
+.txtsHome {
+    padding-top: 80px;
+    padding-left: 24px;
+}
+
+#promocoes {
+    padding: 32px 24px;
+    margin-bottom: 32px;
+}
+
+#promocoes img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.imgSection {
+    flex-direction: column;
+    display: flex;
+    gap:32px;
+    cursor: pointer;
+   
+}
+
+
+.txtSection2 {
+    padding-top: 32px;
+    padding-bottom: 24px;
+    text-align: center;
+    font-family: var(--t1-font-family);
+    color: var(--text-Tittle-color);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-size: 3rem;
+}
+   
+
+
+div[class*=container-2] {
+    text-align: center;
+    width: 100%;
+    height: 33%;
+    margin-top: 32px;
+    
+    font-family: var(--s1-font-family);
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.btn2 {
+    position: relative;
+    color: var(--secondary-color);
+    width: 256px;
+    height: 64px;
+    line-height: 64px;
+    transition: all 0.3s;
+
+    .btn2 {
+        transition: all 0.3s;
+        transform: scale(1, 1);
+    }
+}
+
+.btn2::before,
+.btn2::after {
+    content: '';
+    position: absolute;
+    transition: all 0.3s;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.btn-two::before {
+
+    z-index: 1;
+
+    opacity: 0;
+    background: #76cdf58b;
+    transform: scale(0.1, 1);
+}
+
+.btn-two:hover::before {
+    opacity: 1;
+    transform: scale(1, 1);
+}
+
+.btn-two::after {
+    transition: all 0.3s;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+
+}
+
+.btn-two:hover::after {
+    transform: scale(1, .1);
+    opacity: 0;
+    
+}
+
+#sections{
+ 
+    margin-bottom: 32px;
+}
+
+#sections img{
+    max-width: 100%;
+    cursor: pointer;
+}
+.txtSection3{
+      padding-top: 32px;
+    padding-bottom: 8px;
+    font-family: var(--t1-font-family);
+    color: var(--text-Tittle-color);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-size: 3rem;
+}
+
+.txtDivs{
+    padding: 0px 24px;
+}
+
+.pDiv{
+    color: var(--text-alt-color);
+    font-family: var(--s1-font-family);
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 100;
+    line-height: normal;
+   
+    
+}
+
+
+div[class*=container-3] {
+    text-align: center;
+    width: 100%;
+    height: 33%;
+    margin-top: 32px;
+    font-family: var(--s1-font-family);
+ 
+}
+
+
+
+.btn3 {
+    position: relative;
+    color: var(--secondary-color);
+    width: 256px;
+    height: 64px;
+    line-height: 64px;
+    transition: all 0.3s;
+
+    .btn3 {
+        transition: all 0.3s;
+        transform: scale(1, 1);
+    }
+}
+
+.btn3::before,
+.btn3::after {
+    content: '';
+    position: absolute;
+    transition: all 0.3s;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.btn-three::before {
+
+    z-index: 1;
+
+    opacity: 0;
+    background: #76cdf58b;
+    transform: scale(0.1, 1);
+}
+
+.btn-three:hover::before {
+    opacity: 1;
+    transform: scale(1, 1);
+}
+
+.btn-three::after {
+    transition: all 0.3s;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+
+}
+
+.btn-two:hover::after {
+    transform: scale(1, .1);
+    opacity: 0;
+    
+}
+
+footer{
+    padding-top: 20%;
+    font-family: var(--s1-font-family);
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+}
+
+.copyr{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.social{
+    padding-top: 24px;
+    display: flex;
+    justify-content: center;
+}
+.social img{
+  
+    width: 11%;
+    padding: 16px;
+    cursor: pointer;
+}
+
+.social img:hover{
+    border: solid 1px rgba(255, 255, 255, 0.504);
+    border-radius: 2.5px;
+    transition: all ease 0.5s;
+    filter: blur(0.5px);
+    padding: 20px;
+}
+
+
+
+
+
+/* MODO DESKTOP */
+
+@media(min-width: 1024px){
+header img{
+    width: 20%;
+
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 120px;
+    align-items: center;
+}
+
+#menu{
+    display: block;
+}
+
+ul{
+    display: flex;
+    gap: 24px;
+}
+
+#iconHam{
+    display: none;
+}
+
+#menu a{
+    background-color: #2ebdff00;
+}
+
+#menu li:hover{
+    
+    border-radius: 2px;
+    background-color:#76cdf50e;
+    transition: ease all 1s;
+    border-bottom: solid 3.5px white;
+}
+.boxDiv{
+    width: 500px;
+}
+
+.bgImg {
+    width: 100vw;
+    height: 680px;
+    background-image: url('/Imagens/talvezHome.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.txtsHome{
+    padding-top: 120px;
+    padding-left: 24px;
+}
+.tituloPrincipal {
+    font-family: var(--t1-font-family);
+    color: var(--primary-color);
+    font-size: 5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 8px;
+}
+
+.cards{
+    display: flex;
+    width: 100vw;
+    gap: 24px;
+    cursor: pointer;
+}
+
+.cards img{
+    width: 23%;
+    max-width: 100%;
+}
+
+.cards img:hover{
+    padding: 10px;
+    transition: all ease 0.2s;
+    filter: drop-shadow(-3px 0px 5px #000000);
+    filter: blur(1.5px);
+    
+}
+
+
+
+#sections{
+    margin-top: 48px;
+    display: flex;
+    margin-bottom: 56px;
+}
+
+.txtSection3{
+    font-size: 4rem;
+}
+
+.txtDivs{
+    width: 700px;
+    height: 1px;
+}
+
+.social img{
+    width: 6%;
+   
+}
+.social{
+    align-items: center;
+}
+
+footer{
+    padding-top: 5%;
+}
+}
